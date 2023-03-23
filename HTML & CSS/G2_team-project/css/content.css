@@ -1,0 +1,64 @@
+.contents {
+    margin-top: 300px;
+    float: left;
+    width:25%;
+}
+
+.section-title {
+    margin-top: 50px;
+    border-bottom: 2px solid #dee7ec;
+    font-size: 35px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+}
+
+.contents-item p {
+    font-size: 24px;
+    margin-top: 10px;
+    margin-bottom:30px;
+    color:black;
+}
+.polo img {
+    width: 400px;
+    height: 400px;
+}
+.crop img {
+    max-width: 400px;
+    max-height: 400px;  
+}
+.sleeve img {
+    width: 400px;
+    height: 400px; 
+}
+.base img{
+    max-width: 450px;
+    max-height: 450px;
+}
+.polo img:hover{
+    width: 450px;
+    height: 450px;
+}
+.crop img:hover {
+    max-width: 450px;
+    max-height: 450px;  
+}
+.sleeve img:hover {
+    width: 450px;
+    height: 450px; 
+}
+.base img:hover{
+    max-width: 450px;
+    max-height: 450px;
+}
+.base p:hover {
+    color: blue;
+}
+.polo p:hover{
+    color: blue;
+}
+.crop p:hover{
+    color: blue;
+}
+.sleeve p:hover {
+    color:blue;
+}
