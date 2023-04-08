@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event - OnClick</title>
+</head>
+<body>
+    <!-- metode 1 -->
+    <h2>Simple OnClick Programme</h2>
+    <h2 onclick="this.innerHTML='Change'">Click on this</h2>
+
+    <!-- metode 2 -->
+    <h2>Simple OnClick Programme methode 2</h2>
+    <h2 onclick="ubahText(this)">Click on this</h2>
+
+    <!-- metode 3 -->
+    <h2>Simple OnClick Programme methode 3</h2>
+    <button onclick="tampilkanTanggal()">Time</button>
+    <p id="Tanggal"></p>
+
+    <!-- metode 4 -->
+    <h2>Simple OnChange Programme </h2>
+    Masukkan nama: <input type="text" id="fname" onchange="Kapital()">
+    <p>Saat anda meninggalkan input maka onchange akan ter trigger</p>\
+
+    <!-- metode 5 -->
+    <div onmouseover="MouseOver(this)" onmouseout="MouseOut(this)" style="background-color: blue;width: 120px;height: 20px;padding: 40px;color: white;">Mouse</div>
+
+    <!-- metode 6 -->
+    <h2>MouseDown & MouseUp</h2>
+    <div onmousedown="MDown(this)" onmouseup="MUp(this)" style="background-color: rgb(255, 191, 0);width: 120px;height: 20px;padding: 40px;color: black;">Mouse</div>
+
+
+
+    <script>
+        function ubahText(id){
+            id.innerHTML="Berubah";
+        }
+
+        function tampilkanTanggal(){
+            document.getElementById("Tanggal").innerHTML=Date();
+        }
+
+        function Kapital(){
+            const x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+
+        function MouseOver(obj){
+            obj.innerHTML="Mouse Over";
+            
+        }
+
+        function MouseOut(obj){
+            obj.innerHTML="Mouse Out";
+        }
+
+        function MDown(obj){
+            obj.style.backgroundColor="#00E7DE";
+            obj.innerHTML="Release Me";
+
+        }
+        function MUp(obj){
+            obj.style.backgroundColor="#3505FC";
+            obj.innerHTML="Pressed Me";
+
+        }
+    </script>
+
+</body>
+</html>

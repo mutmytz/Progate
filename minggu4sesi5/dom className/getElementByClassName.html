@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>getElementByClassName</title>
+</head>
+<body>
+    <h1>The Document Object</h1>
+    <h2>Using getElementByClassName as method</h2>
+    <p>Change element by order of class</p>
+    <div class="demo">Element1</div>
+    <div class="demo">Element2</div>
+    <div class="demo">Element3</div>
+    <div class="demo modified">Element 4</div>
+    <div class="demo modified">Element 5</div>
+    <div class="demo modified">Element 6</div>
+    <div class="demo modified">Element 7</div>
+
+    <script>
+        const classArray=document.getElementsByClassName("demo");
+        classArray[1].innerHTML="Changed";
+
+        const classArray2=document.getElementsByClassName("demo modified");
+        classArray2[0].style.backgroundColor="red";
+    </script>
+</body>
+</html>

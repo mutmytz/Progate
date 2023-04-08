@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example 2</title>
+</head>
+<body>
+    <p>Change Background based on class from javascript</p>
+    <div class="demo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum vel illum perspiciatis necessitatibus, recusandae reiciendis velit eum, esse aliquid laboriosam odit quisquam quasi quam! Ad minima numquam cupiditate quisquam asperiores?</div>
+    <div class="demo">123456</div>
+    <div class="demo">Example1</div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, maiores neque. <span class="demo">consectetur, eum aperiam accusantium minus autem cupiditate vero odit</span>  aliquid dolore aliquam veritatis atque modi numquam eligendi eius!</p>
+    <script>
+        const classArray=document.getElementsByClassName("demo");
+        for(let i=0;i<classArray.length;i++){
+            classArray[i].style.backgroundColor="blue";
+        }
+    </script>
+</body>
+</html>
